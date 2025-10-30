@@ -57,6 +57,7 @@ h1 {
   border-radius: 5px;
   padding: 10px 50px;
   text-decoration: none;
+  position: relative;
 }
 .kelas {
   display: flex;
@@ -69,9 +70,18 @@ h1 {
 .text:hover {
   color: #5b20c7;
 }
-.depan img {
-  float: left;
+.depan {
+  position: relative;
 }
-img {
-  float: left;
+.gambar1 {
+  position: relative;
+}
+.gambar2 {
+  position: absolute;
+  top: 50px;
+}
+.gambar3 {
+  position: absolute;
+  left: 970px;
+  top: 130px;
 }
