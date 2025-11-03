@@ -47,6 +47,10 @@ span {
   max-width: 1120px;
   margin: 0 auto;
   padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 h1 {
   font-size: 70px;
@@ -58,11 +62,6 @@ h1 {
   padding: 10px 50px;
   text-decoration: none;
   position: relative;
-}
-.kelas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .text {
   color: #86838b;
@@ -78,10 +77,40 @@ h1 {
 }
 .gambar2 {
   position: absolute;
-  top: 50px;
+  top: 100px;
+  left: -100px;
 }
 .gambar3 {
   position: absolute;
-  left: 970px;
-  top: 130px;
+  right: -100px;
+  top: 100px;
+}
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 16px;
+    display: flex;
+    font-size: 0.5rem;
+    position: relative;
+  }
+  .kelas {
+    padding: 0 16px;
+    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .gambar1 {
+    padding-top: 50px;
+    width: 300px;
+    position: relative;
+  }
+  .gambar2 {
+    position: absolute;
+    left: 0px;
+    top: 350px;
+  }
+  .gambar3 {
+    position: absolute;
+    top: 0px;
+  }
 }
